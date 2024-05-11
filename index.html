@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .header{
+    position: changed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(25, 204, 34);
+    }
+    .logo{
+        font-size: 5em;
+        color: #ffffff;
+        user-select: none;
+    }
+
+    .navigation a {
+        position: relative;
+        font-size: 1.5em;
+
+        color:aliceblue;
+        text-decoration: none;
+        font-weight: 500px;
+        
+        margin-left: 100px;
+
+    }
+
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        border-radius: 20px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+    .navigation a:hover::after{
+        transform: scaleX(1);
+    }
+
+    .button{
+        width: 130px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid;
+        outline: none;
+        border-color: rgb(156, 237, 80);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1,1em;
+        color: aliceblue;
+        font-weight: 500;
+        margin-left: 40px;
+
+    }
+    .button:hover{
+        background: #c8f0b1;
+        color: rgb(247, 242, 242);
+    }
+    
+
+    span{
+        float: center;
+    }
+
+   .hhw{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    top: 4%;
+    right: 10%;
+    float: left;
+    margin: 45px;
+   }
+
+    .r1{
+        
+        background-color: rgb(135, 227, 92);
+   color: #fff;
+   width: 400px;
+   border-radius: 60px;
+   margin: 45px;
+   padding: 50px;
+   
+    }
+    
+
+.r2{
+   background-color: white;
+   border: 20px solid rgb(127, 219, 60);
+   width: 675px;
+   margin: 45px;
+   padding : 40px;
+   border-radius: 50px;
+   float: right;
+   align-items:left;
+   }
+
+.r3{
+   background-color: rgb(135, 227, 92);
+   color: #fff;
+   height: 100px;
+   width: 650px;
+   border-radius: 55px;
+   margin: 45px;
+   padding: 50px;
+}
+.r4{
+    background-color: white;
+   border: 20px solid rgb(127, 219, 60);
+   height: 100px;
+   width: 675px;
+   margin: 45px;
+   margin-right:150px ;
+   padding : 40px;
+   border-radius: 50px;
+   float: right;
+   align-content: center;
+   
+   }
+    
+
+.construction{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    top: 4%;
+    right: 10%;
+    float: right;
+    margin-right: 150px;
+    
+}
+
+.industrial{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    top: 4%;
+    right: 10%;
+    float: left;
+    margin: 45px;
+}
+
+.r5{
+    background-color: white;
+   border: 20px solid rgb(127, 219, 60);
+   height: 100px;
+   width: 675px;
+   margin: 45px;
+   margin-right:150px ;
+   padding : 40px;
+   border-radius: 50px;
+   float: right;
+   align-content: center;
+}
+
+.h3{
+    margin-top: 20px;
+}
+
+.wastelamp{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    top: 4%;
+    right: 10%;
+    margin: 45px;
+    float: right;
+    margin-right: 150px;
+}
+
+.r6{
+    background-color: rgb(135, 227, 92);
+   color: #fff;
+   height: 100px;
+   width: 650px;
+   border-radius: 55px;
+   margin-left: 45px;
+   margin-top: 63px;
+   padding: 50px;
+}
+
+.mediwaste{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    top: 4%;
+    right: 10%;
+    float: left;
+    margin: 45px;
+}
+
+.r7{
+    background-color: white;
+   border: 20px solid rgb(127, 219, 60);
+   height: 100px;
+   width: 675px;
+   margin: 45px;
+   margin-right:150px ;
+   padding : 40px;
+   border-radius: 50px;
+   float: right;
+   align-content: center;
+}
+
+.h6{
+    margin-top: 50px;
+}
+
+.ewaste{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    top: 4%;
+    right: 10%;
+    margin: 45px;
+    float: right;
+    margin-right: 150px;
+}
+
+.r8{
+    background-color: rgb(135, 227, 92);
+   color: #fff;
+   height: 100px;
+   width: 650px;
+   border-radius: 55px;
+   margin-left: 45px;
+   margin-top: 63px;
+   padding: 50px;
+}
+
+.tires{
+    width: 350px;
+    height: 200px;
+    border-radius: 40px;
+    top: 4%;
+    right: 10%;
+    float: left;
+    margin: 45px;
+}
+
+.r9{
+    background-color: white;
+   border: 20px solid rgb(127, 219, 60);
+   height: 100px;
+   width: 675px;
+   margin: 45px;
+   margin-right:150px ;
+   padding : 40px;
+   border-radius: 50px;
+   float: right;
+   align-content: center;
+}
+
+
+
+
+
+
+ </style>
+    
+    
+
+    <head>
+        <link rel="stylesheet"href="D:\work space\solid waste management\#style.css">
+        <title>solidwastage.com</title>
+        
+    </head>
+    <body>
+    <header class="header">
+        
+            <h2 class="logo"> Solid Wastes</h2>
+            <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#" onclick="document.location='wastes.html'">Wastes</a>
+            <a href="#">Contact</a>
+             <button class="button"onclick="document.location='Login_page.html'"> Log in</button>
+        
+        </nav>
+    </header></br>
+        <img src="solid waste separation.jfif" alt="Solid Waste" class="waste">
+        
+        <div class="r2">                <p>RCRA states that "solid waste" means any garbage or refuse, sludge from a wastewater treatment plant, water supply treatment plant, or air pollution control facility and other discarded material, resulting from industrial, commercial, mining, and agricultural operations, and from community activities.</p></div>
+        <br><h2><b>Types of solid waste</b></h4>
+        <ul class="r1">
+            <li>Household Hazardous Waste (HHW)</li></br>
+            <li>Construction and Demolition Debris</li></br>
+            <li>Industrial/Commercial Waste.</li></br>
+            <li>Hazardous Waste Lamps.</li></br>
+            <li>Regulated Medical Waste.</li></br>
+            <li>Used Electronic Equipment.</li></br>
+            
+            <li>Waste Tires.</li>
+        </ul>
+        
+        <h3><a href="https://www.epa.gov/hw/household-hazardous-waste-hhw">1. Household Hazardous Waste</a></h3>
+        <img src="hhw.jpg" class="hhw">
+        <p class="r4">Household hazardous waste (HHW) (also referred to as domestic hazardous waste or home-generated special materials) is waste that is generated from residential households. HHW only applies to wastes that are the result of the use of materials that are labeled for and sold for home use.</p>
+        <table style="width:2000px; border-color: black;">
+        <h3><a href="https://portal.ct.gov/DEEP/Waste-Management-and-Disposal/Construction-and-Demolition-Waste/What-is-CD-Waste">2.Construction and Demolition Debris</a></h3>
+        <div>
+            <img src="construction waste.jpg" class="construction">
+            <p class="r3">The term “construction and demolition debris” means waste building materials, packaging, and rubble resulting from construction, remodeling, repair, and demolition operations on pavements, houses, commercial buildings, and other structures. (C) Household waste .</p>
+        </div>
+        <h3><a href="https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/industrial-and-commercial-waste">3. Industrial/Commercial Waste</a></h3>
+        <img src="industry.jfif" class="industrial">
+        <p class="r5">Commercial and industrial waste consists of dry waste generated by businesses, production units and offices. It can contain a wide variety of different materials, from plastics, paper and cardboard to metals, wood, glass and organic materials – most of which are valuable and exploitable.</p></br>
+        <br>
+        <br>
+        <h3 class="h3"><a href="https://www.hercenter.org/wastereduction/bulbs.php">4.Hazardous Waste Lamps.</a></h3>
+        <img src="wastelamp.jfif" class="wastelamp">
+        <p class="r6">Hazardous waste is a waste with properties that make it potentially dangerous or harmful to human health or the environment. The universe of hazardous wastes is large and diverse. Hazardous wastes can be liquids, solids, or contained gases.</p>
+        <h3><a href="https://www.who.int/india/health-topics/medical-waste">5. Regulated Medical Waste</a></h3>
+        <img src="mediwaste.jfif" class="mediwaste">
+        <p class="r7">Regulated medical waste (RMW) is material generated in research, production and testing of biologicals or health care such as: Infectious animal waste. Human pathological waste. Human blood and blood products. Needles and syringes (sharps)</p>
+        <h3 class="h6"><a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)">6.Electronic Waste</a></h3>
+        <img src="ewaste.jpg" class="ewaste">
+        <p class="r8">Electronic waste (e-waste), is a generic term used to describe all types of old, end-of-life or discarded electrical and electronic equipment, such as household appliances; office information and communications equipment; entertainment and consumer electronic equipment; lighting equipment; electric and electronic tools </p>
+        <h3><a href="https://www.ecomena.org/methods-for-tire-recycling/">7.Waste tires</a></h3>
+        <img src="tires.jfif" class="tires">
+        <p class="r9"> A tire that is no longer mounted on a vehicle and is no longer suitable for use as a vehicle tire due to wear, damage, or deviation from the manufacturer's original specifications.</p>
+
+    
+    </body>
+</html>

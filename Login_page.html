@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Log in</title>
+  <link rel="stylesheet" href="D:\HTML\Learn Html\Login_page.css">
+  <style>
+    body {
+  background-color: rgb(190, 249, 101);
+  background-position: top;
+  background-size: 1580px 820px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+      width: 550px;
+      background-color: white;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      padding: 10px;
+      transform: translateY(220px);
+      border: 1px solid #fefefe;
+      border-radius: 25px;
+      
+      
+}
+.login-form input {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #04AA6D;
+}
+
+.login-form button {
+  background-color: #80d43b;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+
+}
+
+.login-form button:hover {
+  opacity: 0.7;
+}
+
+.create-account-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.create-account-link a {
+  color: black
+}
+
+.google-sign-in-button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.google-sign-in-button-link a{
+  color: black;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+    <div class="login-form">
+        <h1>Login!</h1>
+        <input type="text" placeholder="Username">
+        <br><br>
+        <input type="password" placeholder="Password">
+        <br><br>
+        <button type="submit">Log in</button>
+        <br><br>
+        <div class="create-account-link">
+          <a href="#">Create an account</a>
+        </div>
+        
+        <div class="google-sign-in-button">
+          <a href="#">Sign in with Google</a>
+        </div>
+      </div>      
+</body>
+</html>
